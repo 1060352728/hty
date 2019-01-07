@@ -16,28 +16,6 @@ Date: 2019-01-07 21:40:28
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for log
--- ----------------------------
-DROP TABLE IF EXISTS `log`;
-CREATE TABLE `log` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `createTime` datetime DEFAULT NULL,
-  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `exceptionDetail` varchar(1500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `logType` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `method` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `params` varchar(1500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `requestIp` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `time` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
-
--- ----------------------------
--- Records of log
--- ----------------------------
-
--- ----------------------------
 -- Table structure for permission
 -- ----------------------------
 DROP TABLE IF EXISTS `permission`;
